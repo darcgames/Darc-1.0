@@ -1,0 +1,2 @@
+Guys i couldn't find good sprites for a shooting game, so i think we have to wait for david to design some specific ones at the moment. 
+Here is one demo i made, it has three scenes, lets use this one as a practice game and test on android.
