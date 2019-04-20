@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://SCRIPTS/Fireball.gd" type="Script" id=1]
+[ext_resource path="res://PROJECTILES/Fireball_Effect_2/Fireball_Effect_08.png" type="Texture" id=2]
+[ext_resource path="res://PROJECTILES/Fireball_Effect_2/Fireball_Effect_13.png" type="Texture" id=3]
+[ext_resource path="res://PROJECTILES/Fireball_Effect_2/Fireball_Effect_18.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "fire",
+"speed": 15.0
+} ]
+
+[node name="Fireball_effect" type="Area2D"]
+position = Vector2( 238, 59 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 1 )
+animation = "fire"
+frame = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 1.99999, 0.5 )
+scale = Vector2( 6.9, 4.55 )
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

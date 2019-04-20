@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://SCENES/Coin_Collision.gd" type="Script" id=1]
+[ext_resource path="res://SCRIPTS/Coin_Collision.gd" type="Script" id=1]
 [ext_resource path="res://star coin animation Pack/star coin animation Pack/star coin rotate/star coin rotate 1.png" type="Texture" id=2]
 [ext_resource path="res://star coin animation Pack/star coin animation Pack/star coin rotate/star coin rotate 2.png" type="Texture" id=3]
 [ext_resource path="res://star coin animation Pack/star coin animation Pack/star coin rotate/star coin rotate 3.png" type="Texture" id=4]
