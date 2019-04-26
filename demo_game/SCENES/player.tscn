@@ -45,6 +45,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
 }
+JUMP_HEIGHT = 200
 
 [node name="player_sprite" type="AnimatedSprite" parent="."]
 position = Vector2( 14.3081, 2.55555 )

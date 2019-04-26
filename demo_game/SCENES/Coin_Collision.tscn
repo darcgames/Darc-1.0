@@ -14,6 +14,11 @@ animations = [ {
 "loop": true,
 "name": "spin",
 "speed": 20.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "disappear",
+"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
