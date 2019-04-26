@@ -14,6 +14,7 @@ const FIREBALL = preload("res://SCENES/Fireball.tscn")
 func _physics_process(delta):
 	# ADDS GRAVITY TO THE PLAYER TO MAKE HIM FALL
 	motion.y += GRAVITY
+	
 
 	# HANDLES WHAT HAPPENS WHEN THE SPACE KEY IS PUSHED
 	# UI_SELECT IS THE SPACE KEY BY DEFAULT
