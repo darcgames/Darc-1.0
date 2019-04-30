@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var SPEED = 300
+export var SPEED = 400
 export var GRAVITY = 10
 var motion = Vector2()
 
