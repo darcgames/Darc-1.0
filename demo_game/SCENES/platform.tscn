@@ -3,21 +3,21 @@
 [ext_resource path="res://SCENES/country-platform-files/country-platform-files/country-platform-preview.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 29.5556, 5.61774 )
+extents = Vector2( 194.029, 30 )
 
 [node name="PLATFORM" type="Sprite"]
-position = Vector2( 249, 163 )
+position = Vector2( 173, 143 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( -0.738007, 181, 57, 40 )
-__meta__ = {
-"_edit_group_": true
-}
+region_rect = Rect2( -0.738007, -1.326, 385.653, 222.326 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 28, 11 )
+position = Vector2( 193, 225 )
 shape = SubResource( 1 )
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 194, 4.99998 )
+shape = SubResource( 1 )

@@ -10,15 +10,15 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "disappear",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "spin",
 "speed": 20.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "disappear",
+"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -39,5 +39,4 @@ frame = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
-
 [connection signal="body_entered" from="." to="." method="_on_Coin_Collision_body_entered"]

@@ -33,8 +33,19 @@ func _physics_process(delta):
 	# HANDLES WHAT HAPPENS WHEN THE PLAYER IS ON THE FLOOR
 	if is_on_floor():
 		
-		motion.x = SPEED
-		$player_sprite.play("run")
+		if Input.is_action_pressed('ui_left'):
+			motion.x = -SPEED
+			$player_sprite.play("run")
+			$player_sprite.flip_h = true
+			
+		elif Input.is_action_pressed('ui_right'):
+			motion.x = SPEED
+			$player_sprite.play('run')
+			$player_sprite.flip_h = false
+		
+		else:
+			$player_sprite.play('idle')
+			motion.x = 0
 		# HANDLES WHAT HAPPENS WHEN THE PLAYER PUSHES THE UP BUTTON 
 		if Input.is_action_just_pressed('ui_up'):
 			motion.y = -JUMP_HEIGHT
